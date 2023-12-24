@@ -1,8 +1,8 @@
 import Stripe from "stripe";
 import prisma from "@/libs/prismadb"
-import { NextResponse } from "next/server";
 import { CartProductType } from "@/app/product/[productId]/ProductDetails";
 import { getCurrentUser } from "@/actions/getCurrentUser";
+import { NextResponse } from "next/server";
 // loading stripe
 const stripe=new Stripe(process.env.STRIPE_SECRET_KEY as string,{
     apiVersion:"2023-10-16",
@@ -20,7 +20,7 @@ return price
 export async function POST(request:Request){
     const currentUser=await getCurrentUser()
     if(!currentUser){
-        return NextResponse.json({error:'Unauthorized'},{status:401})
+        return NextResponse.error()
     }
     const body=await request.json()
     const {items,payment_intent_id}=body
@@ -55,7 +55,7 @@ export async function POST(request:Request){
                 })
             ]);
             if(!existing_order){
-                return NextResponse.json({error:'Invalid payment intent'},{status:400})
+                return NextResponse.error()
             }
     
     return NextResponse.json({paymentIntent:updated_intent})
@@ -74,7 +74,9 @@ export async function POST(request:Request){
             data:orderData
         });
 return NextResponse.json({paymentIntent})
+
     }
+    return NextResponse.error()
 
 
 }
