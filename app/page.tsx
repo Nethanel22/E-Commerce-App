@@ -1,4 +1,4 @@
-import { products } from "@/utils/products";
+import { products } from "@/utils/Products";
 import Container from "./components/Container";
 import HomeBanner from "./components/HomeBanner";
 import { truncateText } from "@/utils/truncateText";
