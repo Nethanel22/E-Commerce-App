@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import { buffer } from "micro"
 import Stripe from "stripe"
+import prisma from "@/libs/prismadb"
+
 // create a local endpoint with stripe and webhook
 
 export const config={
