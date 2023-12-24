@@ -1,27 +1,3 @@
-// tailwind  css
-// sticky= position: sticky=
-// when scroll down the nav don't scroll down
-// w-full=width:100%
-// z-30=z-index:30
-// shadow-sm=small shadow
-// py-4=padding y up and down 16px
-// border-b-[1px]=border-bottom-width: 1px;
-// items-center=align-items: center;
-// hidden=display: none
-// md:block=@media (min-width: 768px) {
-//     .md\:block {
-//         display: block;
-//     }
-// }
-// gap-8=gap:2rem
-// md:gap-12=
-// @media (min-width: 768px) {
-//     .md\:gap-12 {
-//         gap: 3rem/* 48px */;
-//     }
-// }
-// 
-// 
 import Link from "next/link";
 import Container from "../Container";
 // google fonts
