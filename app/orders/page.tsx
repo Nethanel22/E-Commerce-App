@@ -6,6 +6,7 @@ import getOrdersByUserId from "@/actions/getOrderByUserId";
 
 const Orders = async() => {
     const currentUser = await getCurrentUser()
+    console.log(currentUser)
     if(!currentUser){
         return <NullData title="Oops! Access denied"/>
             }

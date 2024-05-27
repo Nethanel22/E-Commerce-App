@@ -1,7 +1,7 @@
 import prisma from "@/libs/prismadb"
 import { NextResponse } from "next/server";
 import  {getCurrentUser}  from "@/actions/getCurrentUser";
-// create user
+// create  product
 export async function POST(request: Request){
     const currentUser=await getCurrentUser();
     if(!currentUser) return NextResponse.error()

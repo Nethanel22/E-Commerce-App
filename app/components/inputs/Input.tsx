@@ -8,6 +8,7 @@ interface InputProps{
     type?:string
     disabled?:boolean;
     required?:boolean;
+    // insert the field prop id into the useHook Form
     register:UseFormRegister<FieldValues>;
     errors:FieldErrors
 }
