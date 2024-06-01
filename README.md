@@ -24,25 +24,25 @@ My project is an online store designed to facilitate the purchase of electronic 
 #  Challenges I  faced
 * Incomplete or Missing Type Definitions=While many popular libraries have TypeScript type definitions, some might be incomplete or missing. This requires for me  to write their own type definitions
 # How to Install and Run the Project
-A. clone the project from <a href="https://github.com/Nethanel22/e-shop-app">this github page</a> with git clone command
+A. Clone the project from <a href="https://github.com/Nethanel22/e-shop-app">this github page</a> with git clone command
 </br>
-B. type npm i in terminal to install extension
+B.Type npm i in terminal to install extension
 </br>
-C. type npx prisma db push 
+C.Type npx prisma db push 
 </br>
-D. type npm start 
+D. Type npm start 
 # How to Use the Project
-A. click on the user image and click register type username,email 
+A. Click on the user image and click register type username,email 
     and password  and click Sign up or click continue with google button
     </br>
-B. click start shopping button 
+B. Click start shopping button 
     </br>
-C. click the product that you want to purchase and click add to cart
+C.Click the product that you want to purchase and click add to cart
     </br>
-D. click on the checkout button Enter your details to complete checkout 
+D.Click on the checkout button Enter your details to complete checkout 
     and click pay now button 
     </br>
-E. in the next screen click view order button to see the order status or click your orders button  in the user nav(where the picture of the user)
+E.In the next screen click view order button to see the order status or click your orders button  in the user nav(where the picture of the user)
 
 
 
